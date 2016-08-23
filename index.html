@@ -10,30 +10,33 @@
     <div class="container">
       <h1>Bank Account</h1>
       <div class="row">
-        <div class="col-sm-6">
-          <h2>Register a new account:</h2>
-          <form id="register" class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name">
-            <label for="initialDeposit">Initial deposit:</label>
-            <input type="text" class="form-control" id="initialDeposit"><br>
-            <button type="submit" class="bt-lg btn-success">Enter</button>
-          </form>
-        </div>
-        <div class="col-sm-6">
-          <h2>Deposit or withdraw funds:</h2>
-          <form id="funds" class="form-group">
-            <label for="deposit">Deposit amount:</label>
-            <input type="text" class="form-control" id="deposit">
-            <label for="withdrawal">Withdrawal amount:</label>
-            <input type="text" class="form-control" id="withdrawal"><br>
-            <button type="submit" class="bt-lg btn-success">Go!</button>
-          </form>
+        <div class="col-sm-6 col-sm-offset-3">
+          <div class="registration">
+            <h2>Register a new account:</h2>
+            <form id="register" class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name">
+              <label for="initialDeposit">Initial deposit:</label>
+              <input type="text" class="form-control" id="initialDeposit"><br>
+              <button type="submit" class="bt-lg btn-success">Enter</button>
+            </form>
+          </div>
+          <div class="transactions">
+            <h2>Deposit or withdraw funds:</h2>
+            <form id="funds" class="form-group">
+              <label for="deposit">Deposit amount:</label>
+              <input type="text" class="form-control" id="deposit">
+              <label for="withdrawal">Withdrawal amount:</label>
+              <input type="text" class="form-control" id="withdrawal"><br>
+              <button type="submit" class="bt-lg btn-success">Go!</button>
+            </form>
+          </div>
         </div>
       </div>
       <div class="balance">
         <h4>Current balance for <span id="holder"></span>'s accout:</h4>
         <h3 id="balance"></h3>
+        <div id="photo"></div>
       </div>
     </div>
   <script src="js/jquery-3.1.0.js"></script>
